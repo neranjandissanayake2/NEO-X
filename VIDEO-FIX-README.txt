@@ -1,0 +1,1 @@
+NEO-X Study video cards repair 4. This adds an independent fallback renderer for 22 bundled lesson cards, subject navigation and fixes CSS hidden rules. Backup your old folder, replace with this extracted version, restart server and hard refresh Chrome. Browser runtime not tested. YouTube availability depends on uploader.
