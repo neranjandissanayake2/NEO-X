@@ -1,0 +1,12 @@
+NEO-X FIREBASE MEMBER LOGIN - IMPORTANT
+
+1. Open Firebase Console > Project settings (gear icon) > Your apps > NEO-X Web > SDK setup and configuration > Config.
+2. Copy EXACT values into neo-firebase-config.js. Replace PASTE_API_KEY, PASTE_MESSAGING_SENDER_ID, PASTE_APP_ID. Check all other values against console. Do NOT paste service-account JSON or private keys.
+3. Firebase Authentication > Sign-in method > Email/Password must be Enabled.
+4. Firebase Authentication > Settings > Authorized domains > neranjandissanayake2.github.io.
+5. Upload all updated files to GitHub NEO-X repository. Test using your GitHub Pages URL with a NEW account.
+6. The lamp must be ON before login. Sign up sends verification email; users must verify before entering dashboard. Logout and password reset supported.
+7. IMPORTANT SECURITY LIMITATION: GitHub Pages serves HTML/JS/images publicly. A visitor can still download HTML source and embedded lesson data without logging in. This update gates the rendered dashboard, NOT the underlying publicly hosted files. For truly private lessons, PDFs, and user data, move them to server-protected storage (Firebase Storage/Firestore with correct security rules or a backend). Never store secrets in GitHub files. Copy prevention cannot be guaranteed.
+8. GitHub Pages cannot run NEO-X-Server.ps1. NEO AI local API works only on your own PC server, not for public visitors. Do not publish an API key in the repository.
+9. Firebase script modules require internet. For local testing use localhost (Live Server) rather than file://.
+10. IMPORTANT: The old demo guest login was removed. Google/Facebook/GitHub demo buttons were removed until configured securely.
